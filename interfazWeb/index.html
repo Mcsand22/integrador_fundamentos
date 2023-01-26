@@ -13,24 +13,29 @@
         wwwwapas
       </h2>
       <nav class="header_nav">
-        <ul>
-          <li>Inicio</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
+        <ul class="navbar_li">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <article class="main_article">
-        <h1 class="main_h1">Somos <strong class="main_h1-strong">wwwwapas</h1>
-        <h3 class="main_h3">Social media managers | creadoras de contenido</h3>
-        <p class="main_p">
-          Nos encargamos de construir, gestionar y administrar la comunidad
-          online de tu marca, empresa o negocio.
-          <strong
-            >¡Creamos relaciones estables y duraderas con tus clientes!</strong
-          >
-        </p>
+        <section>
+          <h1 class="main_h1">Somos <strong class="main_h1-strong">wwwwapas</h1>
+            <h3 class="main_h3">Social media managers | creadoras de contenido</h3>
+            <p class="main_p">
+              Nos encargamos de construir, gestionar y administrar la comunidad
+              online de tu marca, empresa o negocio.
+              <strong
+                >¡Creamos relaciones estables y duraderas con tus clientes!</strong
+              >
+            </p>
+        </section>
+        <figure>
+          <img src="/img/foto.JPG" alt="mujeres en la oficina">
+        </figure>
       </article>
       <article class="main_article">
         <section class="main_section">
@@ -56,57 +61,60 @@
           </p>
         </section>
       </article>
-      <article class="main_article">
-        <h2 class="article_h2">Servicios</h2>
-        <ol class="article_ol">
-          <li>Análisis de perfil (Benchmarking)</li>
-          <li>Revisión y activación de canales</li>
-          <li>Gestión, creación y diseño de contenido</li>
-          <li>Repuestas a mensajes y consultas</li>
-          <li>
-            Segmentación de promociones según el público objetivo de la pauta
-            publicitaria
-          </li>
-          <li>
-            Diagramamos un calendario que se ajuste a los objetivos de la
-            empresa
-          </li>
-          <li class="ol_strong"><strong>¡Empezamos a comunicar!</strong></li>
-        </ol>
-      </article>
-      <article class="main_article">
-        <section>
-          <h2>¿Quéres que nos contactemos con vos?</h2>
-          <h3>Envianos tu consulta >></h3>
+      <article class="main_article" id="servicios">
+        <figure class="section_left">
+          <img src="/img/img-servicios.png" alt="logo wwwapas">
+        </figure>
+        <section class="section_right">
+          <h2 class="article_h2">Servicios</h2>
+          <ol class="article_ol">
+            <li>Análisis de perfil (Benchmarking)</li>
+            <li>Revisión y activación de canales</li>
+            <li>Gestión, creación y diseño de contenido</li>
+            <li>Repuestas a mensajes y consultas</li>
+            <li>
+              Segmentación de promociones según el público objetivo de la pauta
+              publicitaria
+            </li>
+            <li>
+              Diagramamos un calendario que se ajuste a los objetivos de la
+              empresa
+            </li>
+            <li class="ol_strong"><strong>¡Empezamos a comunicar!</strong></li>
+          </ol>
         </section>
-        <section>
-          <form action="">
-            <label for="name" name=" name">Nombre*</label>
-            <input type="text" name="name" />
-            <label for="email" name="email">Email*</label>
-            <input type="email" name="email" />
-            <label for="mensaje" name="mensaje">Mensaje*</label>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-            <input type="submit" name="submit" /><label for="submit"
-              >Enviar consulta</label
-            >
-            <input type="reset" name="reset" /><label for="reset">Borrar</label>
+      </article>
+      <article class="main_article" id="contacto">
+        <section class="section_left">
+          <h2 class="h2_contact">¿Quéres que nos contactemos con vos?</h2>
+          <h3 class="h3_strong"><strong>Envianos tu consulta >></strong></h3>
+        </section>
+        <section class="section_right">
+          <form action="codigo.php" method="POST">
+            <label for="name" name=" name">Nombre<span>*</span></label>
+            <input type="text" name="name" id="name" />
+            <label for="email" name="email">Email<span>*</span></label>
+            <input type="email" name="email"  id="email"/>
+            <label for="mensaje" name="mensaje">Mensaje<span>*</span></label>
+            <textarea name="mensaje" cols="30" rows="10" id="mensaje"></textarea>
+              <input class="btn" type="submit" name="submit" value="Enviar consulta"/>
+              <input class="btn" type="reset" name="reset" value="Borrar"/>
           </form>
         </section>
       </article>
       <article>
         <ul>
-          <li><a href="">redes wwwapas</a></li>
-          <li><a href="">instagram</a></li>
-          <li><a href="">ball</a></li>
-          <li><a href="">linkedin</a></li>
-          <li><a href="">facebook</a></li>
+          <li><a href="/interfazWeb/index.html" class="li_name">redes wwwapas</a></li>
+          <li><a href="#"><img class="redes" src="/img/instagram-icon.png" alt="instagram icon"></a></li>
+          <li><a href="#"><img class="redes" src="/img/dribbble-icon.png" alt="dribbble icon"></a></li>
+          <li><a href="#"><img class="redes" src="/img/linkedin-icon.png" alt="linkedin icon"></a></li>
+          <li><a href="#"><img class="redes" src="/img/facebook-icon.png" alt="facebook icon"></a></li>
         </ul>
       </article>
     </main>
     <footer>
-      <p>wwwapas</p>
-      <p>wwwapas_sm@mail.com</p>
+      <h3 class="footer_h3">wwwapas</h3>
+      <a class="footer_a" href="mailto:wwwapas_sm@gmail.com">wwwapas_sm@mail.com</a>
     </footer>
   </body>
 </html>
