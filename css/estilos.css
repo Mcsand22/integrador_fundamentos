@@ -40,6 +40,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-size: 1.3rem;
 }
 
 .navbar_li li {
@@ -183,6 +184,12 @@ span {
   color: red;
 }
 
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn {
   background-color: black;
   color: white;
@@ -192,6 +199,8 @@ span {
   font-size: 1.5rem;
   margin-top: 10px;
   padding: 5px;
+  border: none;
+  width: 40%;
 }
 
 ul {
@@ -223,10 +232,6 @@ a {
 
 .redes {
   width: 80px;
-}
-
-.navbar_li {
-  font-size: 1rem;
 }
 
 footer {
