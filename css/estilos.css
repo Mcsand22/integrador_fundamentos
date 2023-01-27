@@ -257,4 +257,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .main_section {
+    width: 80%;
+  }
 }
