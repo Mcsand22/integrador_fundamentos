@@ -260,4 +260,18 @@ footer {
   .main_section {
     width: 80%;
   }
+
+  figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_principal {
+    width: 70%;
+  }
+
+  .section_left img {
+    width: 50%;
+  }
 }
